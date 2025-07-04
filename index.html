@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gangga Arya Fatiyan | Young Developer & Tech Enthusiast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Audio Element for Auto-Play -->
+    <audio id="welcomeAudio" autoplay loop>
+        <source src="https://files.catbox.moe/9yicaz.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Welcome Screen -->
+    <div class="welcome-screen" id="welcomeScreen">
+        <div class="welcome-content">
+            <img src="https://files.catbox.moe/42egu6.jpg" alt="Gangga Arya Fatiyan" class="welcome-profile">
+            <div class="welcome-logo">
+                <i class="fas fa-code"></i>
+                <span>Gangga Arya Fatiyan</span>
+            </div>
+            <h1 class="welcome-title">Welcome to My Portfolio</h1>
+            <p class="welcome-subtitle"><span class="typewriter">Please choose what you're looking for</span></p>
+            <p class="welcome-message">
+                Halo! Selamat datang di dunia digital saya! Saya Gangga Arya, seorang pelajar yang bersemangat dalam teknologi dan pemrograman. Jelajahi portfolio saya untuk melihat proyek-proyek saya, atau lakukan pembayaran untuk kolaborasi lebih lanjut!
+            </p>
+            
+            <div class="welcome-buttons">
+                <a href="#" class="welcome-btn portfolio-btn" id="viewPortfolio">
+                    <i class="fas fa-user"></i> View Portfolio
+                </a>
+                <a href="#" class="welcome-btn payment-btn" id="viewPayment">
+                    <i class="fas fa-money-bill-wave"></i> Payment Methods
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Floating Particles Background -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Portfolio Content -->
+    <div id="portfolioContent" class="screen">
+        <!-- Enhanced Navbar -->
+        <nav class="navbar" id="navbar">
+            <div class="navbar-container">
+                <button class="hamburger-menu" id="hamburgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <a href="#home" class="navbar-logo">
+                    <i class="fas fa-code"></i>
+                    <span>Gangga Arya</span>
+                </a>
+                
+                <div class="navbar-links" id="navbarLinks">
+                    <a href="#home" class="navbar-link active" data-section="home">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a href="#about" class="navbar-link" data-section="about">
+                        <i class="fas fa-user"></i> About Me
+                    </a>
+                    <a href="#skills" class="navbar-link" data-section="skills">
+                        <i class="fas fa-cogs"></i> My Skills
+                    </a>
+                    <a href="#projects" class="navbar-link" data-section="projects">
+                        <i class="fas fa-project-diagram"></i> My Projects
+                    </a>
+                    <a href="#services" class="navbar-link" data-section="services">
+                        <i class="fas fa-laptop-code"></i> What I Can Do
+                    </a>
+                    <a href="#contact" class="navbar-link" data-section="contact">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" id="scrollIndicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        
+        <div class="container">
+            <!-- Header Section -->
+            <header id="home">
+                <img src="https://files.catbox.moe/42egu6.jpg" alt="Gangga Arya Fatiyan" class="profile-pic">
+                <h1 class="header-title">Gangga Arya Fatiyan</h1>
+                <p class="header-subtitle"><span class="typewriter">Young Developer & Tech Enthusiast</span></p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/g4nggaaa" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://instagram.com/yourprofile" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://wa.me/6285855962331" target="_blank" class="social-link">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </header>
+            
+            <!-- About Section -->
+            <section class="section" id="about">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
+                    Hi! I'm a junior high school student passionate about technology and programming. I've been learning to code for the past 2 years, focusing on web development and creating useful bots. I love turning ideas into digital solutions and constantly expanding my skills.
+                </p>
+                <p class="about-text">
+                    When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or helping my friends with their tech problems. My goal is to become a full-stack developer and create applications that make people's lives easier.
+                </p>
+            </section>
+            
+            <!-- Skills Section -->
+            <section class="section" id="skills">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h4>Web Development</h4>
+                        <ul class="skill-list">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript (Basic)</li>
+                            <li>Bootstrap/Tailwind</li>
+                            <li>WordPress (Basic)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Programming</h4>
+                        <ul class="skill-list">
+                            <li>Python (Basic)</li>
+                            <li>Node.js (Basic)</li>
+                            <li>Git/GitHub</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Automation</h4>
+                        <ul class="skill-list">
+                            <li>WhatsApp Bots</li>
+                            <li>Telegram Bots</li>
+                            <li>Simple Scripts</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Projects Section -->
+            <section class="section" id="projects">
+                <h2 class="section-title">My Projects</h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">School Helper WhatsApp Bot</h3>
+                            <p class="project-desc">
+                                A WhatsApp bot that helps students with school schedules, assignment reminders, and quick information lookup.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">WhatsApp API</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">See Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Learning Portal</h3>
+                            <p class="project-desc">
+                                A simple web portal for sharing learning resources with my classmates.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                            <a href="#" class="project-link">See Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-desc">
+                                My first responsive website built from scratch to showcase my projects and skills.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">See Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Services Section -->
+            <section class="section" id="services">
+                <h2 class="section-title">What I Can Do</h2>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Simple Website Creation</h3>
+                        <p class="service-desc">
+                            I can build basic websites for school projects, personal blogs, or small businesses using HTML, CSS, and JavaScript.
+                        </p>
+                        <a href="https://wa.me/6285855962331?text=I'm%20interested%20in%20a%20simple%20website" class="service-cta">Contact Me</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="service-title">WhatsApp/Telegram Bots</h3>
+                        <p class="service-desc">
+                            I can create simple bots for automation, information lookup, or fun interactions on messaging platforms.
+                        </p>
+                        <a href="https://wa.me/6285855962331?text=I'm%20interested%20in%20a%20WhatsApp/Telegram%20Bot" class="service-cta">Contact Me</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="service-title">Tech Consultation</h3>
+                        <p class="service-desc">
+                            I can help with technology advice, troubleshooting, and recommendations for students and beginners.
+                        </p>
+                        <a href="https://wa.me/6285855962331?text=I%20need%20tech%20advice" class="service-cta">Contact Me</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact Section -->
+            <section class="section" id="contact">
+                <h2 class="section-title">Get In Touch</h2>
+                
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3 class="contact-title">WhatsApp</h3>
+                        <p class="contact-detail">Fastest way to reach me</p>
+                        <a href="https://wa.me/6285855962331" class="contact-link">Send Message</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h3 class="contact-title">Telegram</h3>
+                        <p class="contact-detail">For longer conversations</p>
+                        <a href="https://t.me/yourusername" class="contact-link">Message Me</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3 class="contact-title">Instagram</h3>
+                        <p class="contact-detail">See my updates</p>
+                        <a href="https://Instagram.com/yourprofile" class="contact-link">Follow Me</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Back Button for Portfolio -->
+            <div class="container">
+                <a href="#" class="back-btn" id="portfolioBackToWelcome">
+                    <i class="fas fa-arrow-left"></i> Back to Welcome
+                </a>
+            </div>
+        </div>
+        
+        <footer>
+            © 2023 Gangga Arya Fatiyan. All rights reserved.
+        </footer>
+    </div>
+    
+    <!-- Payment Content -->
+    <div class="payment-container screen" id="paymentContent">
+        <div class="container">
+            <header class="payment-header">
+                <h2 class="section-title">Payment Methods</h2>
+                <p class="header-subtitle">Choose a convenient way to support my work</p>
+            </header>
+
+            <div class="payment-methods">
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="payment-title">WhatsApp Payment</h3>
+                    <p class="payment-desc">Send payments directly via WhatsApp.</p>
+                    <p class="payment-detail">Number: 6285855962331</p>
+                    <button class="copy-btn" onclick="copyToClipboard('6285855962331')">
+                        <i class="far fa-copy"></i> Copy Number
+                    </button>
+                    <a href="https://wa.me/6285855962331" class="payment-link" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contact
+                    </a>
+                </div>
+
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3 class="payment-title">E-Wallet</h3>
+                    <p class="payment-desc">Pay via popular e-wallet platforms.</p>
+                    <p class="payment-detail">DANA/Gopay/OVO: 085855962331</p>
+                    <button class="copy-btn" onclick="copyToClipboard('6285855962331')">
+                        <i class="far fa-copy"></i> Copy Number
+                    </button>
+                </div>
+
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <h3 class="payment-title">QRIS Payment</h3>
+                    <p class="payment-desc">Scan the QR code for quick payments.</p>
+                    <div class="qris-container">
+                        <img src="https://files.catbox.moe/your-qris-image.png" alt="QRIS Payment" class="qris-image">
+                    </div>
+                    <a href="#" class="payment-link" id="viewQris">View QR Code</a>
+                </div>
+            </div>
+
+            <div class="payment-note">
+                <h3 class="note-title">Payment Instructions</h3>
+                <ul>
+                    <li>Confirm payment via WhatsApp with your name and purpose.</li>
+                    <li>Send a screenshot of the payment confirmation.</li>
+                    <li>Payments will be verified within 24 hours.</li>
+                </ul>
+            </div>
+
+            <div class="thanks-button">
+                <button class="welcome-btn portfolio-btn" id="thanksButton">
+                    <i class="fas fa-heart"></i> Thanks to
+                </button>
+            </div>
+
+            <a href="#" class="back-btn" id="backToWelcome">
+                <i class="fas fa-arrow-left"></i> Back to Welcome
+            </a>
+        </div>
+
+        <!-- QRIS Overlay -->
+        <div class="qris-overlay" id="qrisOverlay">
+            <div class="qris-overlay-content">
+                <img src="https://files.catbox.moe/your-qris-image.png" alt="QRIS Payment Enlarged" class="qris-image-large">
+                <button class="close-overlay-btn" id="closeQrisOverlay">
+                    <i class="fas fa-times"></i> Close
+                </button>
+            </div>
+        </div>
+
+        <!-- Thanks Overlay -->
+        <div class="thanks-overlay" id="thanksOverlay">
+            <div class="thanks-overlay-content">
+                <h3 class="section-title">Acknowledgments</h3>
+                <p class="thanks-message">
+                    My heartfelt thanks to:
+                    <ul>
+                        <li>Allah SWT for guidance and blessings.</li>
+                        <li>Nabi Muhammad SAW for inspiration.</li>
+                        <li>My parents for their endless support.</li>
+                        <li><a href="https://github.com/G4NGGAAA" target="_blank">G4NGGAAA</a> for being me!</li>
+                        <li>Gavriel, my amazing partner.</li>
+                        <li>AI tools: Deepseek, Grok, ChatGPT, and Gemini for powering my creativity.</li>
+                    </ul>
+                </p>
+                <button class="close-overlay-btn" id="closeThanksOverlay">
+                    <i class="fas fa-times"></i> Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
